@@ -43,7 +43,7 @@ with col_a:
                             engine_ids,
                             format_func=lambda x: f"Engine {int(x)}")
 with col_b:
-    delay = st.slider("Simulation Speed (lower = faster):",
+    delay = st.slider("Simulation Speed :",
                       1, 100, 10)
 
 engine_data = df[df['engine_id']==selected].reset_index(drop=True)
